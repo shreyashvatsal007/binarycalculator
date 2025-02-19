@@ -28,10 +28,15 @@ This calculator allows users to perform **addition, subtraction, multiplication,
 
 To run this project, simply open **index.html** in your browser.  
 
+## 👤 Author
+
+This project was created by **Shreyash Vatsal**. Feel free to connect or contribute!  
+
 ## 📜 License
 
 This project is **free to use** and modify for personal or educational purposes.  
 
 ---
 
-💡 **Feel free to enhance the UI or add more features! 🚀**      
+💡 **Feel free to enhance the UI or add more features! 🚀**  
+    
