@@ -1,6 +1,6 @@
 # Binary Calculator
 
-A simple and stylish **Binary Calculator** built with **HTML, CSS**.  
+A simple and stylish **Binary Calculator** built with **HTML, CSS and JavaScript**.  
 This calculator allows users to perform **addition, subtraction, multiplication, and division** on binary numbers.  
 
 ## 🚀 Features
@@ -13,7 +13,8 @@ This calculator allows users to perform **addition, subtraction, multiplication,
 ## 🎨 Technologies Used
 
 - **HTML** - Structure of the calculator  
-- **CSS** - Styling and animations  
+- **CSS** - Styling and animations
+- **JavaScript** - Logical Operations and Calculations
 
 
 
