@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <h2>Binary Calculator</h2>
+        <input type="text" id="num1" placeholder="Enter Binary 1">
+        <input type="text" id="num2" placeholder="Enter Binary 2">
+
+        <div class="buttons">
+            <button onclick="calculate('+')">+</button>
+            <button onclick="calculate('-')">−</button>
+            <button onclick="calculate('*')">×</button>
+            <button onclick="calculate('/')">÷</button>
+        </div>
+
+        <div id="result">Result: <span></span></div>
+
+    </div>
+    <footer id="credit">Created by Shreyash</footer>
+
+
+
+
+    <script>
+        function calculate(operator) {
+            let bin1 = document.getElementById("num1").value.trim();
+            let bin2 = document.getElementById("num2").value.trim();
+
+            if (!/^[01]+$/.test(bin1) || !/^[01]+$/.test(bin2)) {
+                alert("Please enter valid binary numbers (0 or 1 only).");
+                return;
+            }
+
+            let num1 = parseInt(bin1, 2);
+            let num2 = parseInt(bin2, 2);
+            let result;
+
+            switch (operator) {
+                case '+': result = num1 + num2; break;
+                case '-': result = num1 - num2; break;
+                case '*': result = num1 * num2; break;
+                case '/': 
+                    if (num2 === 0) {
+                        alert("Cannot divide by zero");
+                        return;
+                    }
+                    result = Math.floor(num1 / num2);
+                    break;
+                default: return;
+            }
+
+            document.getElementById("result").querySelector("span").innerText = result.toString(2);
+        }
+    </script>
+
+
+</body>
+</html>
